@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "auth": {
+      "authtestcbfbd660": [
+        "create",
+        "read",
+        "update"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}

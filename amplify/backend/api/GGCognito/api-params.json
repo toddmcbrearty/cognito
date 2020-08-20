@@ -1,0 +1,37 @@
+{
+    "paths": [
+        {
+            "name": "/user/{sub}",
+            "lambdaFunction": "linkUser",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/GET"
+                ]
+            }
+        }
+    ],
+    "resourceName": "GGCognito",
+    "apiName": "GGCognito",
+    "functionArns": [
+        {
+            "lambdaFunction": "linkUser"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "amplify-authtest-dev-145307-authRole",
+        "unAuthRoleName": "amplify-authtest-dev-145307-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "linkUser",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
